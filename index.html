@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little World ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="page-background"></div>
+
+    <div class="app">
+
+        <!-- БОКОВАЯ ПАНЕЛЬ -->
+
+        <aside class="sidebar">
+
+            <a href="#" class="logo" data-page="home">
+                <span class="logo-symbol">♡</span>
+                <span>our little<br><i>world</i></span>
+            </a>
+
+            <div class="sidebar-note">
+                a little place<br>
+                for our memories
+            </div>
+
+            <div class="nav-label">НАШ МИР</div>
+
+            <nav class="navigation">
+
+                <button class="nav-link active" data-page="home">
+                    <span>01</span>
+                    Главная
+                </button>
+
+                <button class="nav-link" data-page="foods">
+                    <span>02</span>
+                    Любимые блюда
+                </button>
+
+                <button class="nav-link" data-page="wishlist">
+                    <span>03</span>
+                    WishList
+                </button>
+
+                <button class="nav-link" data-page="wishes">
+                    <span>04</span>
+                    Наши желания
+                </button>
+
+                <button class="nav-link" data-page="memories">
+                    <span>05</span>
+                    Воспоминания
+                </button>
+
+                <button class="nav-link" data-page="letters">
+                    <span>06</span>
+                    Письма
+                </button>
+
+                <button class="nav-link" data-page="places">
+                    <span>07</span>
+                    Места
+                </button>
+
+                <button class="nav-link" data-page="calendar">
+                    <span>08</span>
+                    Календарь
+                </button>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="sidebar-heart">made with love ♡</div>
+                <div class="sidebar-date">EST. FOREVER</div>
+            </div>
+
+        </aside>
+
+
+        <!-- ОСНОВНОЙ КОНТЕНТ -->
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div class="breadcrumb">
+                    OUR LITTLE WORLD <span>/</span> <span id="currentPageName">HOME</span>
+                </div>
+
+                <div class="topbar-right">
+                    <span class="online-dot"></span>
+                    just for us
+                    <span class="topbar-heart">♡</span>
+                </div>
+
+            </header>
+
+
+            <!-- ГЛАВНАЯ -->
+
+            <section class="page active" id="page-home">
+
+                <div class="home-intro">
+
+                    <div class="eyebrow">A PLACE FOR TWO SOULS</div>
+
+                    <h1>
+                        Our little<br>
+                        <i>universe.</i>
+                    </h1>
+
+                    <p class="intro-description">
+                        Маленький уголок интернета, который принадлежит только нам.
+                        Здесь живут наши мечты, воспоминания и всё самое дорогое.
+                    </p>
+
+                    <div class="intro-signature">
+                        with love, always ♡
+                    </div>
+
+                </div>
+
+
+                <div class="home-collage">
+
+                    <div class="collage-note note-one">
+                        <span class="note-pin"></span>
+                        <div class="note-small">REMEMBER</div>
+                        <p>Самые лучшие моменты ещё впереди.</p>
+                        <span class="note-heart">♡</span>
+                    </div>
+
+                    <div class="collage-photo">
+                        <div class="photo-placeholder">
+                            <span>♡</span>
+                            <p>our favorite<br>moments</p>
+                        </div>
+                        <div class="photo-caption">a little piece of us</div>
+                    </div>
+
+                    <div class="collage-note note-two">
+                        <span class="note-small">DAILY REMINDER</span>
+                        <p>Ты — моё любимое место.</p>
+                        <span class="note-date">FOREVER & ALWAYS</span>
+                    </div>
+
+                </div>
+
+
+                <div class="section-divider">
+                    <span>THE LITTLE THINGS</span>
+                    <div></div>
+                    <span>♡</span>
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <span class="stat-number" id="statMemories">0</span>
+                        <span class="stat-label">воспоминаний</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number" id="statFoods">0</span>
+                        <span class="stat-label">любимых блюд</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number" id="statWishlist">0</span>
+                        <span class="stat-label">желаний</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-number" id="statPlaces">0</span>
+                        <span class="stat-label">мест</span>
+                    </div>
+
+                </div>
+
+
+                <div class="home-bottom">
+
+                    <div>
+                        <div class="eyebrow">A SMALL REMINDER</div>
+                        <h2>Our story is still being written.</h2>
+                    </div>
+
+                    <button class="text-button" data-page="memories">
+                        Смотреть воспоминания →
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ЛЮБИМЫЕ БЛЮДА -->
+
+            <section class="page" id="page-foods">
+
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">TASTE OF HAPPINESS</div>
+                        <h1>Любимые <i>блюда.</i></h1>
+                        <p>Еда, которую мы любим, и рецепты, которые хочется сохранить.</p>
+                    </div>
+
+                    <span class="heading-decoration">02 / 08</span>
+                </div>
+
+
+                <form class="add-form" data-form="foods">
+
+                    <div class="form-title">Добавить любимое блюдо <span>♡</span></div>
+
+                    <div class="form-grid">
+
+                        <input name="title" placeholder="Название блюда" required>
+
+                        <input name="author" placeholder="Кто добавил?">
+
+                        <input name="ingredients" placeholder="Ингредиенты">
+
+                        <input name="image" type="file" accept="image/*">
+
+                        <textarea name="recipe" placeholder="Рецепт или заметка..." rows="3"></textarea>
+
+                    </div>
+
+                    <button class="primary-button" type="submit">Сохранить блюдо +</button>
+
+                </form>
+
+
+                <div class="cards-grid" id="foodsList"></div>
+
+            </section>
+
+
+
+            <!-- WISHLIST -->
+
+            <section class="page" id="page-wishlist">
+
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">THINGS WE DREAM ABOUT</div>
+                        <h1>Our <i>WishList.</i></h1>
+                        <p>Маленькие и большие вещи, которые мы хотим однажды получить.</p>
+                    </div>
+
+                    <span class="heading-decoration">03 / 08</span>
+                </div>
+
+
+                <form class="add-form" data-form="wishlist">
+
+                    <div class="form-title">Добавить в WishList <span>♡</span></div>
+
+                    <div class="form-grid">
+
+                        <input name="title" placeholder="Что мы хотим?" required>
+
+                        <input name="author" placeholder="Кто добавил?">
+
+                        <input name="image" type="file" accept="image/*">
+
+                        <textarea name="description" placeholder="Описание или ссылка..." rows="3"></textarea>
+
+                    </div>
+
+                    <button class="primary-button" type="submit">Добавить желание +</button>
+
+                </form>
+
+
+                <div class="cards-grid" id="wishlistList"></div>
+
+            </section>
+
+
+
+            <!-- НАШИ ЖЕЛАНИЯ -->
+
+            <section class="page" id="page-wishes">
+
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">ONE DAY, TOGETHER</div>
+                        <h1>Наши <i>желания.</i></h1>
+                        <p>Всё то, что мы хотим пережить вместе.</p>
+                    </div>
+
+                    <span class="heading-decoration">04 / 08</span>
+                </div>
+
+
+                <form class="add-form" data-form="wishes">
+
+                    <div class="form-title">Записать желание <span>♡</span></div>
+
+                    <div class="form-grid">
+
+                        <input name="title" placeholder="Наше желание" required>
+
+                        <input name="author" placeholder="Кто предложил?">
+
+                        <textarea name="description" placeholder="Немного подробнее..." rows="3"></textarea>
+
+                    </div>
+
+                    <button class="primary-button" type="submit">Сохранить желание +</button>
+
+                </form>
+
+
+                <div class="cards-grid" id="wishesList"></div>
+
+            </section>
+
+
+
+            <!-- ВОСПОМИНАНИЯ -->
+
+            <section class="page" id="page-memories">
+
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">OUR TIME CAPSULE</div>
+                        <h1>Наши <i>воспоминания.</i></h1>
+                        <p>Моменты, к которым всегда хочется возвращаться.</p>
+                    </div>
+
+                    <span class="heading-decoration">05 / 08</span>
+                </div>
+
+
+                <form class="add-form" data-form="memories">
+
+                    <div class="form-title">Сохранить воспоминание <span>♡</span></div>
+
+                    <div class="form-grid">
+
+                        <input name="title" placeholder="Название воспоминания" required>
+
+                        <input name="date" type="date">
+
+                        <input name="author" placeholder="Кто добавил?">
+
+                        <input name="image" type="file" accept="image/*">
+
+                        <textarea name="description" placeholder="Расскажи об этом моменте..." rows="3"></textarea>
+
+                    </div>
+
+                    <button class="primary-button" type="submit">Сохранить момент +</button>
+
+                </form>
+
+
+                <div class="cards-grid" id="memoriesList"></div>
+
+            </section>
+
+
+
+            <!-- ПИСЬМА -->
+
+            <section class="page" id="page-letters">
+
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">WORDS FROM THE HEART</div>
+                        <h1>Наши <i>письма.</i></h1>
+                        <p>Слова, которые хочется оставить друг другу.</p>
+                    </div>
+
+                    <span class="heading-decoration">06 / 08</span>
+                </div>
+
+
+                <form class="add-form" data-form="letters">
+
+                    <div class="form-title">Написать письмо <span>♡</span></div>
+
+                    <div class="form-grid">
+
+                        <input name="title" placeholder="Название письма" required>
+
+                        <input name="author" placeholder="От кого?">
+
+                        <textarea name="description" placeholder="Напиши всё, что хочется сказать..." rows="5" required></textarea>
+
+                    </div>
+
+                    <button class="primary-button" type="submit">Сохранить письмо +</button>
+
+                </form>
+
+
+                <div class="cards-grid" id="lettersList"></div>
+
+            </section>
+
+
+
+            <!-- МЕСТА -->
+
+            <section class="page" id="page-places">
+
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">PLACES TO REMEMBER</div>
+                        <h1>Наши <i>места.</i></h1>
+                        <p>Где мы были и куда обязательно хотим попасть.</p>
+                    </div>
+
+                    <span class="heading-decoration">07 / 08</span>
+                </div>
+
+
+                <form class="add-form" data-form="places">
+
+                    <div class="form-title">Добавить место <span>♡</span></div>
+
+                    <div class="form-grid">
+
+                        <input name="title" placeholder="Название места" required>
+
+                        <input name="author" placeholder="Кто добавил?">
+
+                        <input name="image" type="file" accept="image/*">
+
+                        <textarea name="description" placeholder="Адрес, ссылка или описание..." rows="3"></textarea>
+
+                    </div>
+
+                    <button class="primary-button" type="submit">Сохранить место +</button>
+
+                </form>
+
+
+                <div class="cards-grid" id="placesList"></div>
+
+            </section>
+
+
+
+            <!-- КАЛЕНДАРЬ -->
+
+            <section class="page" id="page-calendar">
+
+                <div class="page-heading">
+                    <div>
+                        <div class="eyebrow">DATES TO REMEMBER</div>
+                        <h1>Наш <i>календарь.</i></h1>
+                        <p>Важные даты, маленькие праздники и большие события.</p>
+                    </div>
+
+                    <span class="heading-decoration">08 / 08</span>
+                </div>
+
+
+                <form class="add-form" data-form="events">
+
+                    <div class="form-title">Добавить событие <span>♡</span></div>
+
+                    <div class="form-grid">
+
+                        <input name="title" placeholder="Название события" required>
+
+                        <input name="date" type="date" required>
+
+                        <input name="author" placeholder="Кто добавил?">
+
+                        <textarea name="description" placeholder="Заметка..." rows="3"></textarea>
+
+                    </div>
+
+                    <button class="primary-button" type="submit">Добавить дату +</button>
+
+                </form>
+
+
+                <div class="cards-grid" id="calendarList"></div>
+
+            </section>
+
+
+            <footer class="footer">
+                <span>OUR LITTLE WORLD</span>
+                <span>made with love, for two ♡</span>
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- УВЕДОМЛЕНИЯ -->
+
+    <div class="toast" id="toast"></div>
+
+
+    <!-- ПРОСМОТР ФОТО -->
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">×</button>
+        <img id="lightboxImage" src="" alt="Фото">
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
